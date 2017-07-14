@@ -1,0 +1,97 @@
+#+TITLE: JavaScript 
+#+OPTIONS: H:1 num:nil toc:nil html-postamble:nil reveal_title_slide:nil
+#+EMAIL: reddevil.sabin@gmail.com
+#+AUTHOR: neymarsabin
+#+DATE: 2017:06:03
+#+REVEAL_THEME: night
+#+REVEAL_TRANS: linear
+#+REVEAL_EXTRA_CSS: ./modified.css
+
+* 
+  :PROPERTIES:
+  :reveal_background: ./images/javascript.gif
+	:reveal_background_size: 1400px
+  :reveal_background_trans: defult
+  :END:
+	
+
+
+* JavaScript 
+	JavaScript is a cross-platform,object-oriented programming language.It is a small and lightweight language. \\
+	#+BEGIN_QUOTE
+	Client Side || Server Side 
+	#+END_QUOTE
+	#+BEGIN_QUOTE
+	Javascript is all about making content of web document dynamic.
+	#+END_QUOTE
+
+* JavaScript can do...
+	- Provides HTML designers a programming Tool
+	- Can put dynamic test into HTML/ read and write in html documents 
+	- Can react to events
+	- can be used to validate data
+	- .......
+
+
+* Popular Javascript Frameworks 
+	- Angular*JS
+	- ReactJS
+	- NodeJS
+	- VueJS
+	- EmberJS
+	- MeteorJS
+
+
+* Data Types in Javascript 
+	- Boolean
+	- Null
+	- Undefined
+	- Number
+	- String
+	- Objects 
+
+* Basics of JavaScript
+	- Everything is case sensitive
+	- variables are loosely typed \\
+		#+BEGIN_SRC js 
+    	// integer 
+    	var a = 10;
+    	// string 
+    	var favoriteColor = "red";
+    	// boolean 
+    	var canDriveCar = false;
+		#+END_SRC
+	- *var* keyword is used
+	- variables need not have to be declared before using
+
+* Document Object Model (DOM)
+	- application programming interface(API) for valid HTML documents.It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+
+* DOM...
+	- A web page is a document
+	- DOM provides the way to represent,store and manipulate the document(web page).
+	- Object Oriented representation of web page
+	- DOM is not a programming language 
+
+* 
+  :PROPERTIES:
+  :reveal_background: ./images/domtree.gif
+  :reveal_background_trans: linear
+	:reveal_background_size: 1000px
+  :END:
+	
+* Some DOM methods 
+	- document.getElementById("id")
+	- document.getElementsByTagName(name)
+	- document.getElementsByClassName(name)
+	- document.createElement(name)
+	- parentNode.appendChild(node)
+	- element.innerHTML
+	- element.style.*
+	- element.setAttribute(attribute,value)
+	- element.getAttribute
+	- element.addEventListener
+	- document.appendChild(element)
+	- document.replaceChild(element)
+	- document.write(text)

@@ -1,0 +1,11 @@
+.reveal pre {
+		font-size: 25px;
+}
+
+.author {
+		display: none;
+}
+
+p.date {
+		display: none;
+}

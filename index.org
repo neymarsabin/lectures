@@ -1,0 +1,124 @@
+#+TITLE: PHP
+#+OPTIONS: H:1 num:nil toc:nil
+#+EMAIL: reddevil.sabin@gmail.com
+#+AUTHOR: neymarsabin
+#+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1
+#+OPTIONS: reveal_history:nil reveal_keyboard:t reveal_overview:t
+#+OPTIONS: reveal_progress:t reveal_rolling_links:nil
+#+OPTIONS: reveal_single_file:t reveal_slide_number:"c"
+#+OPTIONS: reveal_title_slide:auto reveal_width:-1
+#+REVEAL_TRANS: linear
+#+REVEAL_SPEED: default
+#+REVEAL_THEME: night
+#+REVEAL_EXTRA_CSS: ./modified.css
+
+
+* Introduction 
+	- Language for developing Dynamic web applications
+	- PHP scripts run on the server 
+	- A PHP program may contain HTML,CSS and JS along with it
+	- ".php" is the file name extension
+	
+* 
+  :PROPERTIES:
+  :reveal_background: ./images/php.gif
+  :reveal_background_trans: linear
+	:reveal_background_size: 900px 
+  :END:
+
+* Variables 
+	#+BEGIN_SRC php 
+	$name = "Rick";
+	$money = 10.5;
+	$boolean = true;
+	$age = 30;
+	#+END_SRC
+	#+BEGIN_QUOTE
+	A letter must start with underscore or a letter. \\ 
+	Variables names are case sensitive.
+	#+END_QUOTE
+
+	#+BEGIN_SRC php 
+	echo "My name is ". $name . "My age is $age";
+	echo " I have $money in my pocket."; 
+	#+END_SRC
+
+	
+* Variable Scope 
+	- Global Variables 
+	- Local Variables 
+	- Static Varibles 
+
+* Data Types 
+	- String
+	- Integer
+	- Float
+	- Integer
+	- Boolean
+	- Array
+	- Object
+
+* Arrays 
+	#+BEGIN_SRC php
+  	$colleges = array("NIST","Kathmandu University","St.Xaviers");
+  	var_dump($colleges);
+  	echo $colleges[0];
+  	echo $colleges[1];
+	#+END_SRC
+	Associative Arrays: 
+	#+BEGIN_SRC php 
+  	$bio = array("jack" => "12","crow" => "14","zen" => "18");
+  	foreach($bio as $name => $age) {
+  			echo $name . "=" . $age;
+  			echo "<br>";
+  	}
+	#+END_SRC
+
+	
+
+# * Constanpts 
+# 	define(name,value,case-insensitive,true);
+# 	#+BEGIN_SRC php 
+# 	define("PI",3.14);
+# 	echo PI;
+# 	#+END_SRC
+# 	- constants are global 
+
+* Conditions 
+	#+BEGIN_SRC php 
+  	if (condition) {
+  			// code to be executed 
+  	} elseif {
+    		// code to be executed 
+  	} else {
+    		// code to be executed 
+  	}
+	#+END_SRC
+
+* Loops 
+** While loop
+	 #+BEGIN_SRC php 
+   	$x = 0;
+   	while ( $x <= 25) {
+   			echo "The number is: $x";
+   			$x++;
+   	}
+	 #+END_SRC
+** For loop
+#+BEGIN_SRC php
+	for (i = 0; i < 10; i++) {
+			echo "number: $i";
+	}
+#+END_SRC
+
+* Functions 
+	#+BEGIN_SRC php 
+  	function function_name(parameters) {
+  			// code to be executed;
+  	}
+		function_name(parameters);
+	#+END_SRC
+
+
+* Form Processing 
+	
